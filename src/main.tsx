@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client'
+import TrackingComponent from './TrackingComponents/Tracking_Nutrion.tsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       { index: true, element: <Introduction /> },
       {
         path: "Follow",
-        element: <Support />,
+        element: <TrackingComponent />,
       },
       {
         path: "Achive",
@@ -39,6 +40,8 @@ const router = createBrowserRouter([
       },
 
     ]
+
+
   },
 ]);
 

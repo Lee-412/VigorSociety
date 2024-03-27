@@ -1,0 +1,15 @@
+.tracking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.progress-container .p1 p,
+.progress-container .p2 p,
+.progress-container .p3 p
+{
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family:  Arial, sans-serif;
+}
