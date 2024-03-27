@@ -5,22 +5,39 @@ import {
 } from "react-router-dom";
 
 import React from 'react';
+import App from './App';
+import Introduction from './Introduction/Introduction';
+import Support from './SuportComponent/Support';
+import AchiveComponent from './AchievementComponent/achiveComponent';
 
 // router web
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Home</div>,
+    element: <App />,
     children: [
-      { index: true, element: <div>basic</div> },
+      { index: true, element: <Introduction /> },
       {
-        path: "page1",
-        element: <div> page 1</div>,
+        path: "Follow",
+        element: <Support />,
       },
       {
-        path: "page2",
-        element: <div>page2</div>,
-      }
+        path: "Achive",
+        element: <AchiveComponent />,
+      },
+      {
+        path: "Advise",
+        element: <AchiveComponent />,
+      },
+      {
+        path: "Information",
+        element: <AchiveComponent />,
+      },
+      {
+        path: "Support",
+        element: <Support />,
+      },
+
     ]
   },
 ]);
