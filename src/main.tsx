@@ -10,6 +10,8 @@ import App from './App';
 import Introduction from './Introduction/Introduction';
 import Support from './SuportComponent/Support';
 import AchiveComponent from './AchievementComponent/achiveComponent';
+import Information from './InformationComponent/Information.tsx';
+import AdviseComponent from './AdviseComponent/AdviseComponent.tsx';
 
 // router web
 const router = createBrowserRouter([
@@ -28,11 +30,11 @@ const router = createBrowserRouter([
       },
       {
         path: "Advise",
-        element: <AchiveComponent />,
+        element: <AdviseComponent />,
       },
       {
         path: "Information",
-        element: <AchiveComponent />,
+        element: <Information />,
       },
       {
         path: "Support",
