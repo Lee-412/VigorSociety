@@ -6,12 +6,13 @@ import {
 } from "react-router-dom";
 
 import React from 'react';
+import CarouselTracking from './TrackingComponents/CaroulselTrack.tsx';
 
 // router web
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <TrackingComponent />,
+    element: <CarouselTracking name={"home"} />,
     
   },
 ]);
