@@ -13,13 +13,16 @@ import AchiveComponent from './AchievementComponent/achiveComponent';
 import Information from './InformationComponent/Information.tsx';
 import AdviseComponent from './AdviseComponent/AdviseComponent.tsx';
 
+
 // router web
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { index: true, element: <Introduction /> },
+      {
+        index: true, element: <Introduction />
+      },
       {
         path: "Follow",
         element: <TrackingComponent />,
@@ -42,13 +45,12 @@ const router = createBrowserRouter([
       },
 
     ]
-
-
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+
   </React.StrictMode>
 )

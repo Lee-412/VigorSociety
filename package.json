@@ -10,10 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@ant-design/icons": "^5.3.5",
-=======
->>>>>>> bfcc9a2eba669be86ee58b61c53bbd40ef189537
     "antd": "^5.15.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
