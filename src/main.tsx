@@ -6,12 +6,15 @@ import {
 } from "react-router-dom";
 
 import React from 'react';
+import CarouselTracking from './TrackingComponents/CaroulselTrack.tsx';
+
 import App from './App';
 import Introduction from './Introduction/Introduction';
 import Support from './SuportComponent/Support';
 import AchiveComponent from './AchievementComponent/achiveComponent';
 import Information from './InformationComponent/Information.tsx';
 import AdviseComponent from './AdviseComponent/AdviseComponent.tsx';
+import PageTracking from './TrackingComponents/PageTracking.tsx';
 
 
 // router web
@@ -25,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "Follow",
-        element: <TrackingComponent />,
+        element: <PageTracking/>,
       },
       {
         path: "Achive",
