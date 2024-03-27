@@ -1,12 +1,9 @@
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import UsersPage from './screens/users.page.tsx';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
-import LayoutAdmin from './components/layout/layout.Admin.tsx';
 import React from 'react';
 
 // router web
