@@ -10,7 +10,7 @@ function CarouselTracking (props: Data) {
     
     return (
         <div className='progress'>
-            <h1>{props.name}</h1>
+            <h3>{props.name}</h3>
             <TrackingComponent/>
         </div>
     )

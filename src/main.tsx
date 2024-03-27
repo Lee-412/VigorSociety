@@ -8,12 +8,45 @@ import {
 import React from 'react';
 import CarouselTracking from './TrackingComponents/CaroulselTrack.tsx';
 
+import App from './App';
+import Introduction from './Introduction/Introduction';
+import Support from './SuportComponent/Support';
+import AchiveComponent from './AchievementComponent/achiveComponent';
+import Information from './InformationComponent/Information.tsx';
+import AdviseComponent from './AdviseComponent/AdviseComponent.tsx';
+import PageTracking from './TrackingComponents/PageTracking.tsx';
+
 // router web
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <CarouselTracking name={"home"} />,
-    
+    element: <App />,
+    children: [
+      { index: true, element: <Introduction /> },
+      {
+        path: "Follow",
+        element: <PageTracking/>,
+      },
+      {
+        path: "Achive",
+        element: <AchiveComponent />,
+      },
+      {
+        path: "Advise",
+        element: <AdviseComponent />,
+      },
+      {
+        path: "Information",
+        element: <Information />,
+      },
+      {
+        path: "Support",
+        element: <Support />,
+      },
+
+    ]
+
+
   },
 ]);
 
