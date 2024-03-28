@@ -8,8 +8,6 @@ const AdviseComponent = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const [showForm, setShowForm] = useState(false);
-
     const HandleClickInformation = () => {
         window.location.href = '/Information';
     };

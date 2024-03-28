@@ -14,7 +14,7 @@ const CardNutrion = (props:linkData) => (
     style={{ width: 240 }}
     cover={<img alt="example" src={props.data} />}
   >
-    <Meta title={props.data_title} description="www.vigorsociety.com" />
+    <Meta title={props.data_title} description="www.vigorsociety.id.vn" />
   </Card>
 );
 
