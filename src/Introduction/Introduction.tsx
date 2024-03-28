@@ -9,6 +9,7 @@ const Introduction = () => {
 
     return (
         <>
+
             <div style={{ position: "relative" }}>
                 <img
                     style={{
@@ -56,6 +57,14 @@ const Introduction = () => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >   Go to article   </button>
+            </div>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    margin: "50px"
+                }}>
+                <img src="src\Imgae\sources.png" alt="" />
             </div>
             <div className="quote">
                 <div>
@@ -168,15 +177,6 @@ const Introduction = () => {
                     </div>
                 </div>
             </div >
-
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    margin: "50px"
-                }}>
-                <img src="src\Imgae\sources.png" alt="" />
-            </div>
 
             <Button icon={<MessageOutlined />}
                 size="large"
