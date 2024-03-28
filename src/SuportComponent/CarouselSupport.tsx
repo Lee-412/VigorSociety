@@ -11,18 +11,9 @@ const contentStyle: React.CSSProperties = {
 
 const CarouselAid = () => (
     <div className="Aid-carousel">
-        <Carousel effect="fade">
+        <Carousel effect="fade" id='slide'>
             <div>
-              <h3 style={contentStyle}>1</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>2</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>3</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>4</h3>
+              <h3 style={contentStyle}>"Your problems  are my solutions."</h3>
             </div>
         </Carousel>
     </div>

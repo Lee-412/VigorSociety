@@ -9,6 +9,7 @@ const Support = () => {
     return (
         <div className="Support">
             <FormUser/>
+            <CarouselAid/>
         </div>
     )
 }

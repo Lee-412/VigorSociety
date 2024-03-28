@@ -57,13 +57,7 @@ const FormUser = () => {
                     </Form.Item>
 
                     <Form.Item
-                        name="gender" label="Gender"
-                        rules={[{ required: true }]}
-                        style={{ marginBottom: "5px" }}>
-                    </Form.Item>
-
-                    <Form.Item
-                        name="infor" label="problem"
+                        name="infor" label="Problem"
                         rules={[{ required: true }]}
                         style={{ marginBottom: "5px" }}>
                         <TextArea placeholder='Vấn đề mà bạn gặp phải' />

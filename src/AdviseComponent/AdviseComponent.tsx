@@ -8,14 +8,10 @@ import CallComponent from "./CallComponent";
 const AdviseComponent = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
-
-<<<<<<< HEAD
-=======
     const [showForm, setShowForm] = useState(false);
     const [isCallOpen, setIsCallOpen] = useState(false);
 
 
->>>>>>> 0aed5249d2a0bd639a6f3872db1693cc1d5c0f3c
     const HandleClickInformation = () => {
         window.location.href = '/Information';
     };
