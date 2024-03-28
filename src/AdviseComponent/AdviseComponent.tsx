@@ -1,4 +1,3 @@
-import Icon from "@ant-design/icons";
 import { Avatar, Card, Col, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 import { useState } from "react";
@@ -8,8 +7,6 @@ import CallComponent from "./CallComponent";
 const AdviseComponent = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const [showForm, setShowForm] = useState(false);
     const [isCallOpen, setIsCallOpen] = useState(false);
 
 
@@ -36,16 +33,18 @@ const AdviseComponent = () => {
                         backgroundColor: "#96b9ac"
                     }}
                     >
-                        <Card style={{
-                            display: "flex",
-                            height: "350px",
-                            textAlign: "center",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            backgroundColor: "#74c6cf",
-                            borderRadius: "350px"
+                        <Card
+                            hoverable
 
-                        }}
+                            style={{
+                                display: "flex",
+                                height: "350px",
+                                textAlign: "center",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                backgroundColor: "#74c6cf",
+                                borderRadius: "350px",
+                            }}
                             bordered={false} onClick={() => HandleClickInformation()}>
 
                             <Meta
@@ -62,16 +61,19 @@ const AdviseComponent = () => {
                         backgroundColor: "#d97373"
                     }}
                     >
-                        <Card style={{
-                            display: "flex",
-                            height: "350px",
-                            textAlign: "center",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            backgroundColor: "#f5c0c0",
-                            borderRadius: "500px"
+                        <Card
+                            hoverable
 
-                        }}
+                            style={{
+                                display: "flex",
+                                height: "350px",
+                                textAlign: "center",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                backgroundColor: "#f5c0c0",
+                                borderRadius: "500px"
+
+                            }}
                             bordered={false} onClick={() => HandleClickAdvisetoForm()}>
 
                             <Meta
@@ -88,15 +90,17 @@ const AdviseComponent = () => {
                         backgroundColor: "#8dbd95"
                     }}>
 
-                        <Card style={{
-                            display: "flex",
-                            height: "350px",
-                            textAlign: "center",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            backgroundColor: "#84eb87",
-                            borderRadius: "500px"
-                        }}
+                        <Card
+                            hoverable
+                            style={{
+                                display: "flex",
+                                height: "350px",
+                                textAlign: "center",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                backgroundColor: "#84eb87",
+                                borderRadius: "500px"
+                            }}
                             bordered={false} onClick={() => handleClickAdviseCall()}>
 
                             <Meta

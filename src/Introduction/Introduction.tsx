@@ -1,4 +1,4 @@
-import { MessageOutlined, SearchOutlined } from "@ant-design/icons";
+import { MessageOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { useState } from "react";
 

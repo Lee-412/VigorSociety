@@ -1,5 +1,5 @@
-import React from 'react';
-import { Carousel, Modal, Spin, notification } from 'antd';
+
+import { Modal } from 'antd';
 
 interface dataCallComponent {
     isCallOpen: boolean,

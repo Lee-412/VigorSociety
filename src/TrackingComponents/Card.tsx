@@ -4,11 +4,11 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 interface linkData {
-    data: string
-    data_title: string
+  data: string
+  data_title: string
 }
 
-const CardNutrion = (props:linkData) => (
+const CardNutrion = (props: linkData) => (
   <Card
     hoverable
     style={{ width: 240 }}
