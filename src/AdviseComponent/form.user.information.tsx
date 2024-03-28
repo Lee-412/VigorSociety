@@ -9,6 +9,8 @@ import {
     Modal,
     Select,
     TreeSelect,
+    message,
+    notification,
 } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import { useState } from 'react';
@@ -22,7 +24,7 @@ interface AdviseProps {
 const FormUser = (props: AdviseProps) => {
 
     const { isModalOpen, setIsModalOpen } = props;
-
+    const [messageApi, contextHolder] = message.useMessage();
 
     const { Option } = Select;
 
@@ -31,10 +33,15 @@ const FormUser = (props: AdviseProps) => {
     };
 
     const handleOk = () => {
+        notification.success({
+            message: "Gửi yêu cầu thành công",
+            description: "Gửi yêu cầu thành công, theo dõi câu trả lời trong email của bạn"
+        })
         setIsModalOpen(false);
     };
 
     const handleCancel = () => {
+
         setIsModalOpen(false);
     };
 
