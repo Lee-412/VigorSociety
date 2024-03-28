@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "Follow",
-        element: <PageTracking/>,
+        element: <PageTracking />,
       },
       {
         path: "Achive",
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         path: "Support",
         element: <Support />,
       },
-
+      {}
     ]
   },
 ]);

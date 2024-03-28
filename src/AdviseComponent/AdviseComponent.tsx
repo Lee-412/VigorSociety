@@ -3,16 +3,28 @@ import { Avatar, Card, Col, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 import { useState } from "react";
 import FormUser from "./form.user.information";
+import CallComponent from "./CallComponent";
 
 const AdviseComponent = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+<<<<<<< HEAD
+=======
+    const [showForm, setShowForm] = useState(false);
+    const [isCallOpen, setIsCallOpen] = useState(false);
+
+
+>>>>>>> 0aed5249d2a0bd639a6f3872db1693cc1d5c0f3c
     const HandleClickInformation = () => {
         window.location.href = '/Information';
     };
     const HandleClickAdvisetoForm = () => {
         setIsModalOpen(true);
+    }
+    const handleClickAdviseCall = () => {
+        setIsCallOpen(true);
+
     }
 
     return (
@@ -88,7 +100,7 @@ const AdviseComponent = () => {
                             backgroundColor: "#84eb87",
                             borderRadius: "500px"
                         }}
-                            bordered={false} onClick={() => alert("tư vấn trực tiếp")}>
+                            bordered={false} onClick={() => handleClickAdviseCall()}>
 
                             <Meta
                                 avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />}
@@ -105,6 +117,10 @@ const AdviseComponent = () => {
             <FormUser
                 isModalOpen={isModalOpen}
                 setIsModalOpen={setIsModalOpen}
+            />
+            <CallComponent
+                isCallOpen={isCallOpen}
+                setIsCallOpen={setIsCallOpen}
             />
         </>
     )
