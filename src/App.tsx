@@ -51,36 +51,32 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {/* <div style={{
-        display: "flex"
-      }}>
-        <Avatar
-          // size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-          icon={<AntDesignOutlined />}
-        />
-      </div> */}
       <div style={{
         display: "flex",
+
         justifyContent: "center",
         alignItems: 'centers',
         alignContent: "center",
-
+        backgroundColor: "lightblue", // Adjust the color as needed
+        borderRadius: "5px"
       }}>
+
         <Avatar size="large" src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />
         <Menu onClick={onClick}
           selectedKeys={[current]}
           mode="horizontal" items={items}
           style={{
             marginRight: "300px",
-            marginLeft: "15px"
+            marginLeft: "15px",
+            backgroundColor: "lightblue",
           }} />
         <div
           style={{
             textAlign: 'center'
           }}
         >
-          {/* <Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" /> */}
-          <Badge count={1}>
+
+          <Badge >
             <Avatar shape="square" icon={<UserOutlined />} />
           </Badge>
           <br />
@@ -96,7 +92,8 @@ function App() {
   return (
     <>
       <div>
-        <Header />
+        <Header /><br />
+
         <Outlet />
       </div>
     </>
