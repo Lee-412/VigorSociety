@@ -1,4 +1,4 @@
-## React + TypeScript + Vite
+## VigorSociety - Ứng dụng quản lý sức khoẻ cá nhân
 
 Các bước cần làm:
 1. Clone dự án
